@@ -67,7 +67,7 @@ book_cost = book * books_bought
 notebook_cost = notebooks_bought * notebook
 total_cost = book_cost + notebook_cost
 
-print(f" Book: ${book_cost} \n Notebook: ${notebook_cost} \n Total: ${total_cost}" )
+print(f" Book: ${book} \n Notebook: ${notebook}0 \n Total: ${total_cost}" )
 
 # Challenge 4: Even or Odd  
 # Use the modulus operator to check if the number 57 is even or odd. 
