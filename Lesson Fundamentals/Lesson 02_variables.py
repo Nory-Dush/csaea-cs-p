@@ -8,7 +8,7 @@ age = 74
 print(age)
 
 password = "G00seberryPie5"
-email = "mharrell@nhvweb.net"
+email = "dushinka20302404@student.nhvweb.net"
 print("Password:\t", password, "\nEmail:\t\t", email)
 
 # variable name convention for booleans
