@@ -53,4 +53,4 @@ import random
 
 sides = int(input("How many sides should the die have? "))
 roll = random.randint(1,sides)
-print(f"You rolled a... {roll}")
+print(f"You rolled... {roll}")
