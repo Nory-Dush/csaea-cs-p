@@ -55,10 +55,49 @@ print(f"Favorite quote: {favorite_quote} \nQuote length: {quote_length}")
 # Print the 2nd through 6th characters.
 # Use string slicing.
 
-user_word = "motivational"
+user_word = "moTivAtIoNal"
+print("\nWord:" , user_word)
+print("Lowercase:" , user_word.lower())
+print("Uppercase:" , user_word.upper())
+print("Capitalize first letter:" , user_word.capitalize())
+print("Title format:" , user_word.title())
 print("The second through sixth characters are:", user_word[1:6])
 
-# Challenge 3: Name Formatter
+#find and replace text
+
+sentence = "I'm a goofy goober."
+new_sentence = sentence.replace("I'm", "You're")
+print("\n",sentence)
+print(new_sentence)
+
+#JOIN AND SPLIT
+groceries = "milk,eggs,bread,butter,peanuts"
+print("\nOriginal string: ", groceries)
+
+# Split the string into a Python list, based on a 'delimiter'
+items = groceries.split(",")
+print(items)
+
+# Join a Python list back together into a string
+joined = " and ".join(items)
+print(joined)
+print(type(items))
+print(type(joined))
+
+# Challenge 3: Word Mutation
+# Ask for a word and print it backwards, in uppercase, and lowercase.
+# Example output
+# Enter a word: Python
+# Uppercase: PYTHON
+# Lowercase: python
+# Backwards: nohtyP
+
+word = input("Please enter word:" )
+print("Backwards:" , word[::-1] )
+print("Uppercase:" , word.upper())
+print("Lowercase:" , word.lower())
+
+# Challenge 4: Name Formatter
 # Ask the user for their first and last name, then format it as "Last, First".
 # Use concatenation or f-strings.
 # Example output:
@@ -66,7 +105,7 @@ print("The second through sixth characters are:", user_word[1:6])
 # Enter your last name: Lovelace
 # Formatted name: Lovelace, Ada
 
-firstname = "Ada"
-lastname = "Lovelace"
+firstname = input("\nEnter first name: ")
+lastname = input("Enter last name: ")
 
-print(f"Enter first name: {firstname} \nEnter last name: {lastname} \nFormatted name: {lastname}, {firstname}")
+print(f"Formatted name: {lastname}, {firstname}")
