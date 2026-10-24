@@ -105,7 +105,7 @@ print("Lowercase:" , word.lower())
 # Enter your last name: Lovelace
 # Formatted name: Lovelace, Ada
 
-firstname = input("\nEnter first name: ")
-lastname = input("Enter last name: ")
+firstname = input("\nPlease enter first name: ")
+lastname = input("Please enter last name: ")
 
 print(f"Formatted name: {lastname}, {firstname}")
