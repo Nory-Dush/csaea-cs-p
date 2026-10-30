@@ -84,7 +84,7 @@ if day is not "Monday":
 age = 15
 if age < 13:
     print("You can watch PG or G movies")
-elif age == 13 or age <= 17 and age <= 13:
+elif age <= 17 and age >= 13:
     print("You can watch PG-13 movies")
 elif age >= 18:
     print("You can watch any movie")
@@ -102,13 +102,9 @@ elif age >= 18:
 # (Test: 2024 -> leap, 1900 -> not, 2000 -> leap)
 # These are all leap years: 1600, 1692, 1996, 2000, 2004, 2020, and 2024
 
-year = 2028
+year = 1900
 
-if year / 4 == 0:
+if (year % 4 == 0 or year % 400 == 0) and not year % 100 == 0:
     print(f"{year} is a leap year!")
-elif year / 100 == 0:
-    print(f"{year} is not a leap year!")
-elif year / 100 == 0 and year / 400 == 0:
-    print(f"{year} is not a leap year!")
 else:
     print(f"{year} is not a leap year!")
